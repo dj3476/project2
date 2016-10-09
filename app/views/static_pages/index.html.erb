@@ -4,6 +4,55 @@
 	<p>Welcome to our one-stop shop for all of your sporting good needs.</p>
 	</div>
 
-<%= image_tag("football.jpeg", class:"img-responsive my-image") %>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!--Indicator -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="container-fluid" id="carouselContainer">
+		<div class="carousel-inner mainCarousel" role="listbox">
+			<div class="item active">
+				<%= image_tag 'fitnessgear3.jpg', class:'img-responsive'%>
+				<div class="carousel-caption">
+					<button type="button" class="buttonClass">
+						Shop Now
+					</button>
+				</div>
+			</div><!--end fitness carousel-->
+			<div class="item">
+				<%= image_tag 'sporting2.jpg', class:'img-responsive'%>
+				<div class="carousel-caption">
+					<button type="button" class="buttonClass2">
+						Shop Now
+					</button>
+				</div>
+			</div><!--end sporting carousel-->
+			<div class="item">
+				<%= image_tag 'huntinggear.jpeg', class:'img-responsive' %>
+				<div class="carousel-caption">
+					<button type="button" class="buttonClass">
+						Shop Now
+					</button>
+				</div>
+			</div>			
+		</div><!--end carousel-inner-->
+	</div><!--end container-fluid-->
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+
 </div>
 

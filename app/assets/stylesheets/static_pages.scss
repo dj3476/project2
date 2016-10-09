@@ -1,7 +1,38 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
-//Header Styling
 
+//Carousel Styling
+
+.mainCarousel {
+	width: 100%;
+	height: 550px;
+	background: white;
+
+}
+
+#carouselContainer {
+	padding: 0;
+}
+.item img {
+	width: 100%;
+	margin: auto;
+}
+
+.buttonClass {
+	margin-bottom: 30%;
+	background-color: red;
+	width: 150px;
+	height: 40px;
+}
+
+.buttonClass2 {
+	margin-bottom: 15%;
+	background-color: red;
+	width: 150px;
+	height: 40px;
+}
+
+//Header Styling
 .navigationLinks {
 	float: right;
 }
