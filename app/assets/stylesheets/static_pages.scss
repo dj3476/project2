@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 
 //Carousel Styling
-
 .mainCarousel {
 	width: 100%;
 }
@@ -10,6 +9,7 @@
 #carouselContainer {
 	padding: 0;
 }
+
 .item img {
 	width: 100%;
 	margin: auto;
@@ -25,9 +25,8 @@
 	border-radius: 10px;
 }
 
-#indicators {
-	
-margin-bottom: 1%;
+#indicators {	
+	margin-bottom: 1%;
 }
 
 //Header Styling
@@ -49,6 +48,16 @@ margin-bottom: 1%;
 .navigationBar {
 	width: 80%;
 	margin: 0 auto;
+}
+
+//image
+.productImage {
+	height: 550px;
+}
+
+.imageEdit h5{
+	display: inline;
+	padding-right: 5%;	
 }
 
 //footer
