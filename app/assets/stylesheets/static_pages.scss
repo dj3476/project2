@@ -6,6 +6,25 @@
 	width: 100%;
 }
 
+.carousel {
+	width: 80%;
+	margin: 2.5% auto;
+
+}
+
+.carousel-indicators {
+	padding: 2.5% 0;
+}
+
+.carousel-caption {
+	font-size: 200%;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.productDisplay {
+	width: 80%;
+	margin: 0 auto;
+}
 #carouselContainer {
 	padding: 0;
 }

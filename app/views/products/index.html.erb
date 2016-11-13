@@ -1,20 +1,7 @@
 <div class="container-fluid productTable">
   <p id="notice"><%= notice %></p>  
   <div class="row" id="myProduct">
-    <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4 productImage">
-        <%= image_tag(product.image_url, class: "img-responsive") %>
-        <h1><%= product.name %></h1>
-        <h4><%= product.description %></h4>
-        <h4>color: <%= product.colour %></h4>
-        <strong>$<%= product.price %></strong>
-        <div class="imageEdit">
-          <h5><%= link_to 'Show', product %></h5>
-          <h5><%= link_to 'Edit', edit_product_path(product) %></h5>
-          <h5><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></h5>
-        </div>
-      </div><!-- /col -->
-    <% end %>
+    <%= render partial: "product", collection: @products %>   
   </div>
   <br>
   <%= link_to 'New Product', new_product_path %>
