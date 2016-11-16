@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Project2</title>
+
+    <link rel="stylesheet" href="%5C_files/bootstrap.css">    
+    <link rel="stylesheet" media="all" href="%5C_files/products.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="%5C_files/scaffolds.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="%5C_files/static_pages.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="%5C_files/application.css" data-turbolinks-track="reload">
+    <script src="%5C_files/jquery.js" data-turbolinks-track="reload"></script>
+<script src="%5C_files/jquery_ujs.js" data-turbolinks-track="reload"></script>
+<script src="%5C_files/turbolinks.js" data-turbolinks-track="reload"></script>
+<script src="%5C_files/action_cable.js" data-turbolinks-track="reload"></script>
+<script src="%5C_files/cable.js" data-turbolinks-track="reload"></script>
+<script src="%5C_files/products.js" data-turbolinks-track="reload"></script>
+<script src="%5C_files/static_pages.js" data-turbolinks-track="reload"></script>
+<script src="%5C_files/application.js" data-turbolinks-track="reload"></script>
+    <script src="%5C_files/bootstrap.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="H9Pc6Uw6M001NUlt6YMrFywvyAvHzOPaWS2BuTNJ1Fp8uACX01iNa6U/lXHTaU1IBhn1JAYbSq74w8MjMb2aJQ==">
+  </head>
+
+  <body>
+  	<nav class="navbar navbar-default navigationBar">
+      <div class="container-fluid mainNavigation"> 
+        <div class="navbar-header navigatonHead">
+          <button type="button" class="navbar-toggle collapsed" data-toggle"collapse"="" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Burts Sporting Goods</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navigationLinks">
+            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div><!--end navigation links-->
+      </div><!--end main navigation-->
+  	</nav>
+
+    <div class="container-fluid productTable">
+  <p id="notice"></p>  
+  <div class="row" id="myProduct">
+    <div class="col-sm-2 col-md-4 productImage">
+  <img class="img-responsive" src="%5C_files/football1-be7e5b3584e340c000ad05e3757d4a1963a8f8f40b23789552.jpg" alt="Football1">
+  <h1>Football</h1>
+  <h4>Pig spin football, great for juniors.</h4>
+  <h4>color: brown</h4>
+  <strong>$13.99</strong>
+  <div class="imageEdit">
+    <h5><a href="http://localhost:3000/products/1">Show</a></h5>
+    <h5><a href="http://localhost:3000/products/1/edit">Edit</a></h5>
+    <h5><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/products/1">Destroy</a></h5>
+  </div>
+</div><!-- /col --><div class="col-sm-2 col-md-4 productImage">
+  <img class="img-responsive" src="%5C_files/fitnessgears-66b4b80777ef91d4e6ba2169eb357be8b75ee2fc49a18a5.jpg" alt="Fitnessgears">
+  <h1>console-generated product</h1>
+  <h4>I created this product without using the HTML form!</h4>
+  <h4>color: blue</h4>
+  <strong>$5.99</strong>
+  <div class="imageEdit">
+    <h5><a href="http://localhost:3000/products/2">Show</a></h5>
+    <h5><a href="http://localhost:3000/products/2/edit">Edit</a></h5>
+    <h5><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/products/2">Destroy</a></h5>
+  </div>
+</div><!-- /col --><div class="col-sm-2 col-md-4 productImage">
+  <img class="img-responsive" src="%5C_files/fitnessgears-66b4b80777ef91d4e6ba2169eb357be8b75ee2fc49a18a5.jpg" alt="Fitnessgears">
+  <h1>seed-generated product</h1>
+  <h4>I also created this product without using the HTML forms!</h4>
+  <h4>color: black</h4>
+  <strong>$5.75</strong>
+  <div class="imageEdit">
+    <h5><a href="http://localhost:3000/products/3">Show</a></h5>
+    <h5><a href="http://localhost:3000/products/3/edit">Edit</a></h5>
+    <h5><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/products/3">Destroy</a></h5>
+  </div>
+</div><!-- /col --><div class="col-sm-2 col-md-4 productImage">
+  <img class="img-responsive" src="%5C_files/baseball1-bda5409de1c63f3576ad770dbb12a1d00e72a1c000aee566f1.jpg" alt="Baseball1">
+  <h1>Baseball</h1>
+  <h4>New baseball, great for little leagers.</h4>
+  <h4>color: red</h4>
+  <strong>$8.99</strong>
+  <div class="imageEdit">
+    <h5><a href="http://localhost:3000/products/4">Show</a></h5>
+    <h5><a href="http://localhost:3000/products/4/edit">Edit</a></h5>
+    <h5><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/products/4">Destroy</a></h5>
+  </div>
+</div><!-- /col --><div class="col-sm-2 col-md-4 productImage">
+  <img class="img-responsive" src="%5C_files/soccer1-58f3395064c0b5f0497304936db9b4740330d9a715b408462d9b.jpg" alt="Soccer1">
+  <h1>Soccer Ball</h1>
+  <h4>Junior size soccer ball.</h4>
+  <h4>color: black</h4>
+  <strong>$9.99</strong>
+  <div class="imageEdit">
+    <h5><a href="http://localhost:3000/products/5">Show</a></h5>
+    <h5><a href="http://localhost:3000/products/5/edit">Edit</a></h5>
+    <h5><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/products/5">Destroy</a></h5>
+  </div>
+</div><!-- /col -->   
+  </div>
+  <br>
+  <a href="http://localhost:3000/products/new">New Product</a>
+</div>
+
+
+    <footer class="stickyFooter">
+      <div class="container-fluid">
+    	 © 2016 Burts Sporting Goods
+      </div>
+    </footer>
+  
+
+</body></html>

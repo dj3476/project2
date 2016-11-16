@@ -1,0 +1,129 @@
+/* line 5, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.mainCarousel {
+  width: 100%;
+}
+
+/* line 9, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.carousel {
+  width: 80%;
+  margin: 2.5% auto;
+}
+
+/* line 15, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators {
+  padding: 2.5% 0;
+}
+
+/* line 19, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  font-size: 200%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 24, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.productDisplay {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 28, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+#carouselContainer {
+  padding: 0;
+}
+
+/* line 32, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.item img {
+  width: 100%;
+  margin: auto;
+}
+
+/* line 37, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.buttonClass {
+  margin-bottom: 5%;
+  background-color: red;
+  width: 150px;
+  height: 40px;
+  display: inline;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+/* line 47, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+#indicators {
+  margin-bottom: 1%;
+}
+
+/* line 52, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.navigationLinks {
+  float: right;
+}
+
+/* line 56, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.indexHeader {
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+/* line 62, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.indexInfo {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* line 67, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.navigationBar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 73, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.productImage {
+  height: 550px;
+}
+
+/* line 77, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.imageEdit h5 {
+  display: inline;
+  padding-right: 5%;
+}
+
+/* line 83, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+.stickyFooter {
+  bottom: 0;
+  width: 80%;
+  height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 5em auto;
+}
+
+/*media rule*/
+@media (max-width: 480px) {
+  /* line 94, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+  .buttonClass {
+    width: 100px;
+    height: 25px;
+    margin-bottom: -10%;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  /* line 102, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+  #indicators {
+    margin-bottom: -2.5%;
+  }
+
+  /* line 106, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+  .carousel-indicators {
+    padding-top: 5%;
+    margin-bottom: 1.5%;
+  }
+
+  /* line 111, /home/budda/project2/app/assets/stylesheets/static_pages.scss */
+  .carousel-caption {
+    font-size: 110%;
+    margin-top: 5%;
+    margin-bottom: -12.5%;
+  }
+}
