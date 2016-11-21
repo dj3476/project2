@@ -23,7 +23,13 @@
             <span class="icon-bar"></span>
           </button>
           <!-- Link to about page that redirects back to current age -->
-          <a class="navbar-brand" href="<%= static_pages_about_path %>">Burts Sporting Goods</a>
+          <a class="navbar-brand" href="<%= static_pages_index_path %>">Burts Sporting Goods</a>
+          
+          <%= form_tag("/products", method: "get", class: "navbar-form searchBar") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q, nil, class: "form-control", size: "50%") %>
+            <%= submit_tag("Search", class: "btn btn-primary") %>
+          <% end %>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navigationLinks">
