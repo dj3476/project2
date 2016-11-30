@@ -17,4 +17,5 @@ class StaticPagesController < ApplicationController
     UserMailer.contact_form(@email, @name, @message).deliver_now
   end
 
+
 end
