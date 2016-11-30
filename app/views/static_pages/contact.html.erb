@@ -1,8 +1,8 @@
-<div class="contact_form">
-	<div class="col-md-3 boom">
-		<img src="http://nbsports.net/wp-content/uploads/sporting-goods.jpg">
+<div class="contact_form container-fluid">
+	<div class="col-md-3 contact_image">
+		<img src="http://nbsports.net/wp-content/uploads/sporting-goods.jpg" class="img-responsive">
 		<p>Contact Us @ burts@gmail.com</p>
-	</div><!-- end col-md-4 -->
+	</div><!-- end col-md-3 -->
 
 	<div class="col-md-9 contact_style">
 		<h1>Contact Us</h1>
@@ -22,10 +22,13 @@
 					<%= label_tag :message %>
 					<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
 				</div>
+			</div><!--end col-md-10-->
+			<div class="col-md-3">
+				<%= submit_tag "Send" %>
+				<% end %>
 			</div>
-		</div>
-		<%= submit_tag "Send" %>
-		<% end %>
+		</div><!-- end row -->
+
 	</div><!--end contact_style -->
 </div>
 

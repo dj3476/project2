@@ -50,7 +50,23 @@
 
 //Header Styling
 .navigationLinks {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 	float: right;
+}
+
+.mainNavigation .navbar-brand {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	float: left;
+	padding-left: 2.5%;
+}
+
+.mainNavigation .navbar-brand,
+.mainNavigation .navigationLinks li a {
+	color: white;
 }
 
 .indexHeader {
@@ -87,9 +103,9 @@
 
 //Search Bar
 .searchBar {
- 	display: inline-block;
- 	margin-left: 30%;
- 	margin-bottom: 2.5%;
+ 	text-align: center;
+ 	left: 65%;
+ 	padding-bottom: 1%;
 }
 
 .newProduct {
@@ -101,21 +117,27 @@
 .contact_form {
 	width: 80%;
 	margin: 7.5em auto;
-	background-color: green;
+	
 }
 
-.boom {
+.contact_image {
+	position: relative;
 	height: 400px;
 	padding-top: 5em;
 	background-color: #000000;
-	color: white
+	color: white;
+	max-width: 100%;
+	text-align: center;
 }
 
 .contact_style {
-	padding-left: 10em;
 	height: 400px;
-	color: white;
 	background-color: #1d581d;
+}
+
+.contact_style .form-group,
+.contact_style h1 {
+	color: white;
 }
 
 //footer
