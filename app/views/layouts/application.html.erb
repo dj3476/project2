@@ -13,8 +13,13 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <p class="notice alert-success" role="alert"><%= notice %></p>
+    <% end %>
+    <%if alert %>
+      <p class="alert alert-warning" role="alert"><%= alert %></p>
+    <% end %>
+    
   	<nav class="navbar navbar-default navigationBar">
       <div class="container-fluid mainNavigation"> 
         <div class="navbar-header navigatonHead">
