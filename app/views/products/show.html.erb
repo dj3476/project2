@@ -1,29 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 show_structure">
+      <p id="notice"><%= notice %></p>
+      <p>
+        <%= image_tag(@product.image_url, class:"img-responsive") %>
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <%= link_to 'Back', products_path %>
+      </p>  
+    </div>
+    <div class="col-md-6 show_structure">
+      <p>
+        <h3><strong><%= @product.name %></strong></h3>
+      </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+      <p>
+      	<strong>Colour:</strong>
+      	<%= @product.colour %>
+      </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>
-	<strong>Colour:</strong>
-	<%= @product.colour %>
-</p>
-
-<p>
-	<strong>Price:</strong>
-	<%= @product.price %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+      <p>
+      	<span class="glyphicon glyphicon-usd"><%= @product.price %></span>
+      </p>
+    </div>
+    <div class="col-md-9">
+      <p>
+        <%= @product.highest_rating_comment %>
+      </p>
+    </div>
+  </div>
+</div>
