@@ -11,6 +11,7 @@
     <div class="col-md-6">
       <p>
         <h3><strong><%= @product.name %></strong></h3>
+        Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> 
       </p>
 
       <p>
@@ -30,6 +31,8 @@
     <div class="col-md-9">
       <p>
         <%= @product.highest_rating_comment %>
+        <%= render partial: 'new_comment' %>
+        <%= render partial: 'comments' %>
       </p>
     </div>
   </div>
