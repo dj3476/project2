@@ -33,6 +33,7 @@
         <%= @product.highest_rating_comment %>
         <%= render partial: 'new_comment' %>
         <%= render partial: 'comments' %>
+        <%= will_paginate @comments %>
       </p>
     </div>
   </div>
