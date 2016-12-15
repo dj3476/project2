@@ -1,10 +1,12 @@
 $(document).on('turbolinks:load', function(){
-   $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
+	console.log($(".alert"));
+  	$(".alert").delay(2500).fadeOut("slow");
 
-});
+  	console.log($(".notice"));
+	$(".notice").delay(2500).fadeOut("slow");
 
-$(document).on('turbolinks:load', function(){
     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
+
     $('.rated').raty({ path: '/assets',
       readOnly: true,
       score: function() {

@@ -164,9 +164,10 @@
 	margin: 0 auto;
 	width: 80%;
 	display: block;
+	text-align: center;
 }
 
-/*media rule*/
+//media rule
 @media (max-width: 480px) {
 	.buttonClass {
 		width: 100px;

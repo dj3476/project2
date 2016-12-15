@@ -16,12 +16,3 @@
 //= require_tree .
 
 
-$(document).on('turbolinks:load', function(){
-  console.log($(".alert"));
-  $(".alert").delay(2500).fadeOut("slow");
-});
-
-$(document).on('turbolinks:load', function(){
-	console.log($(".notice"));
-	$(".notice").delay(2500).fadeOut("slow");
-});
