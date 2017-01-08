@@ -37,7 +37,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 
-  #Rspec gem
+  #Rspec gem for model testing
   gem 'rspec-rails', '~> 3.5'
 end
 
@@ -67,3 +67,6 @@ gem 'cancancan', '~> 1.10'
 
 # Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.0'
+
+#Rspec gem for controller testing
+gem 'rails-controller-testing'

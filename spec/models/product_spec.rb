@@ -13,9 +13,15 @@ describe Product do
 		it "returns the average rating of all comments" do
 			expect(@product.average_rating).to eq (3)
 		end
+	end
 
-		it "is not valid" do
-			expect(Product.new(description: "Nice ball")).not_to be_valid
+	context "when the product has no name" do
+		before do
+			@product = Product.create(:description => "This is a family car.")
+		end
+
+		it "should return an invalid product entry" do 
+			expect(@product).not_to be_valid
 		end
 	end
 end
