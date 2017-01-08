@@ -15,7 +15,7 @@ describe UsersController, :type => :controller do
     context "No user is logged in" do
       it "redirects to login" do
         get :show, id: @user.id
-        expect(response).to redirect_to(:user)
+        expect(response).to redirect_to(@user)
       end
     end
   end
