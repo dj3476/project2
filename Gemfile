@@ -39,6 +39,7 @@ group :development, :test do
 
   #Rspec gem for model testing
   gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -68,5 +69,3 @@ gem 'cancancan', '~> 1.10'
 # Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.0'
 
-#Rspec gem for controller testing
-gem 'rails-controller-testing'
