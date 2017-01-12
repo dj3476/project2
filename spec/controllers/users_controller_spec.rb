@@ -4,7 +4,7 @@ describe UsersController, :type => :controller do
   before do
     #@user = User.create!(email: "djere001@gmail.com", password: "dj123456")
     @user = FactoryGirl.create(:user)
-    #@user2 = User.create!(email: "djere001@yahoo.com", password: "dj123456")
+    #@userTwo = FactoryGirl.create(:user)
     
   end
 
@@ -19,6 +19,12 @@ describe UsersController, :type => :controller do
         expect(response).to have_http_status(200)
         expect(assigns(:user)).to eq @user
       end
+      #it "can't access user2 details redirects to root path" do
+        #get :show, id: @userTwo.id
+        #expect(assigns(:user)).not_to eq @user2
+        #expect(response).to redirect_to(root_path)
+        #expect(response).to have_http_status(302)
+      #end
     end
 
     context "No user is logged in" do
@@ -27,15 +33,5 @@ describe UsersController, :type => :controller do
         expect(response).to redirect_to(new_user_session_path)
       end
     end
-
-   #context "First user can't access second user show page" do
-     #before do
-        #sign_in @user
-      #end
-      #it "redirects to root path" do
-        #get :show, id: @user2.id
-        #expect(response).to redirect_to(root_path)
-      #end
-    #end
   end
 end
