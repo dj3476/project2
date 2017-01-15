@@ -15,6 +15,7 @@
       </p>
 
       <%= form_tag "/payments/create" do %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
         <%= render partial: "/shared/stripe_checkout_button" %>
       <% end %>
 
@@ -29,7 +30,7 @@
       </p>
 
       <p>
-      	<span class="glyphicon glyphicon-usd"><%= @product.price %></span>
+        <%= number_to_currency(@product.price)%>
       </p>
     </div>
     <div class="col-sm-6 col-md-9">
