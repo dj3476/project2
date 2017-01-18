@@ -1,9 +1,13 @@
 <div class="container-fluid productTable">
   <p id="notice"><%= notice %></p>  
   <div class="row" id="myProduct">
+    
+  <% cache(cache_key_for_products) do %>
     <%= render @products %>   
+
+  <% end %>
+  
   </div>
   <br>
-  <%= link_to 'New Product', new_product_path %>
 </div>
 
