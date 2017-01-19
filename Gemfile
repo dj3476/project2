@@ -74,3 +74,6 @@ gem 'will_paginate', '~> 3.1.0'
 # Gem for stripe payment 
 gem 'stripe'
 
+# Gem for redis caching
+gem 'redis-rails'
+
