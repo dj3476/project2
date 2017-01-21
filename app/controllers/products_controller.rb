@@ -4,6 +4,9 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+
+  # GET /products
+  # GET /products.json
   def index
     #byebug
     if Rails.env.production?
@@ -23,8 +26,7 @@ class ProductsController < ApplicationController
         @products = Product.all
       end
     end
-  end
-
+end
   # GET /products/1
   # GET /products/1.json
   def show
